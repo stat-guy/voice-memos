@@ -1,0 +1,21 @@
+please review the <~/.claude/skills/voice-memos> skill make sure there are no sensitive information parts in there. Then review ALL of the files in the skill along with the venv needed in order for the skill to work. After you've done all of this come up with a readme.md file along with a full git repo here that i'll have you push to my github repo abtly named "voice-memos" that you'll create. but before you push it, i'll want to read the readme.md file first ultrathink
+
+---
+
+so we're going to have to clean some stuff up. Please uese the @/users/kairi/tailscale_mac-air_nav.md template to ssh into the mac-studio machine pw: Jesus@85 . then read the claude code session <40fec642-2bee-45d0-abbd-4> then in the /users/kairi folder on that machine leave a notes_choher_asr.md file explaining what claude on that machine is doing wrong and how to correctly mimic your setup ultrathink
+
+---
+
+awesome thanks! now your sibling updated the local readme.md and claude.md files. note it needs to also be called out in both files that the user is going to need an active huggingface account; they will need to "accept" rights on sharing their hf name to the huggingface owner cohere; then they need to make sure they have the <hf> cli tool installed and authenticated before they'll be able to make any downloads
+
+---
+
+again it's NOT called <huggingface-cli> it's now <hf> please do <hf --help> so that you better understand
+
+---
+
+perfect! now you can do one last scan of the repo to make sure sensitiv information isn't present and then you can feel free to create on my github page voice-memos and push it as a public repo
+
+---
+
+ok in the readme.md create a PR and push it and merge it. You need to add a little more "color" aroud what kinds of summaries will be possible with this skill. I get leave the complexity of setting up to claude, but explain a little more about "why" and provide a fake example of what a summary could look like(while noting it's an example) to the user reading it
