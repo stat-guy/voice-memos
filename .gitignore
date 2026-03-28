@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments (never commit the venv itself)
+cohere_env/
+venv/
+.venv/
+env/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Transcripts and temp files
+/tmp/
+*.txt.bak
+voice_memo_transcript.txt
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# HuggingFace cache (very large — don't commit)
+.cache/
+
+# Claude Code, Gemini, and other AI assistant metadata
+.claude/
+.gemini/
+.entire/

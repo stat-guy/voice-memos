@@ -1,0 +1,25 @@
+# voice-memos skill — Python dependencies
+# Install into a dedicated venv (see setup.sh)
+# Requires: Apple Silicon Mac (M1/M2/M3/M4), Python 3.11+, macOS 13+
+
+# ── Core ML stack ──────────────────────────────────────────────────────────
+torch>=2.11.0                  # PyTorch with MPS (Apple Silicon GPU) backend
+transformers>=5.4.0            # Hugging Face Transformers — CohereLabs model support
+accelerate>=1.13.0             # Hugging Face Accelerate — model dispatch & mixed precision
+safetensors>=0.7.0             # Fast/safe model weight loading (used by transformers)
+tokenizers>=0.22.2             # Fast tokenizer (transformers dependency)
+sentencepiece>=0.2.1           # SentencePiece tokenizer support
+
+# ── Audio processing ───────────────────────────────────────────────────────
+numpy>=2.0.0                   # Array ops on raw PCM audio
+librosa>=0.11.0                # Audio loading / feature extraction (used for format handling)
+soundfile>=0.13.0              # Read/write WAV, FLAC, AIFF
+scipy>=1.17.0                  # Signal processing (librosa dependency)
+
+# ── Hugging Face Hub / model download ─────────────────────────────────────
+huggingface_hub[cli]>=1.8.0    # `hf` CLI — required to authenticate and download CohereLabs model
+hf-xet>=1.4.0                  # XetHub transfer acceleration for large model downloads
+
+# ── Utilities ─────────────────────────────────────────────────────────────
+tqdm>=4.67.0                   # Progress bars during model download
+requests>=2.33.0               # HTTP (huggingface_hub dependency)
